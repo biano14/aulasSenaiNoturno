@@ -26,7 +26,7 @@ public class Paciente {
 		this.setEstado(estado);
 		this.setComplemento(complemento);
 		this.setCep(cep);
-		System.out.println("Configurando dado do paciente, um instante.");
+		
 	}
 	
 	public String getNomeCompleto() {
@@ -96,7 +96,7 @@ public class Paciente {
 		String dados = "\nNome do Paciente: " + this.getNomeCompleto();
 		dados += "\nData: " + this.getDataNascimento();
 		dados += "\nGenero: " + this.getSexo();
-		dados += "\nEndereço: "+ this.getRua() + ", " +this.getNumero() +", "+this.getBairro() +", "+this.getCidade() +", "+this.getEstado() +", "+this.getComplemento() +", "+this.getCep() +".";
+		dados += "\nEndereï¿½o: "+ this.getRua() + ", " +this.getNumero() +", "+this.getBairro() +", "+this.getCidade() +", "+this.getEstado() +", "+this.getComplemento() +", "+this.getCep() +".";
 		return dados;
 	}
 	

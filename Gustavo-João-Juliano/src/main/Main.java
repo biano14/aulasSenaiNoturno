@@ -1,11 +1,13 @@
 package main;
 
-import java.util.Scanner;
+import java.time.chrono.ThaiBuddhistChronology;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
 import modelo.Medico;
 import modelo.Paciente;
-import javax.swing.JOptionPane;
+import modelo.Receita;
 
 public class Main {
 	public static void main(String[] args) {
@@ -21,7 +23,7 @@ public class Main {
 		  especialidades.add("Pediatra");
 
 		  //String[] arrayDeNomes = especialidades.toArray(new String[0]);
-		  //Setando números do paciente
+		  //Setando nï¿½meros do paciente
 	      List<String> numeroPaciente = new ArrayList<String>();
 	      numeroPaciente.add("61986512587");
 	      numeroPaciente.add("61978456932");
@@ -29,15 +31,15 @@ public class Main {
 		  //String[] arrayDeNumeros = numeroPaciente.toArray(new String[0]);
 	      //Setando nome dos medicamentos precristos
 	      List<String> medicamentosPrescritos = new ArrayList<String>();
-	      numeroPaciente.add("Valpromato de Sodio");
-	      numeroPaciente.add("Dipirona");
+	      medicamentosPrescritos.add("Valpromato de Sodio");
+	      medicamentosPrescritos.add("Dipirona");
 
 
-		  String menu  = "Escolha a opção desejada:\n";
+		  String menu  = "Escolha a opï¿½ï¿½o desejada:\n";
 		  menu += "1. Ver consultas marcadas.\n";
 		  menu += "2. Numeros do Paciente.\n";
 		  menu += "3. Ver dados dos Pacientes cadastrados.\n";
-		  menu += "4. Conferir receitas médicas do paciente.\n";
+		  menu += "4. Conferir receitas mï¿½dicas do paciente.\n";
 		  menu += "5. Sair";
 		  
 		  int opcao;
@@ -50,14 +52,17 @@ public class Main {
 				 break;
 			 
 			 case 2: 
-				 JOptionPane.showMessageDialog(null, "Numeros do paciente:\n" + numeroPaciente);
+				 JOptionPane.showMessageDialog(null, "Numeros do paciente:\n" + medicamentosPrescritos);
 				 break;
 			 case 3:
 				 JOptionPane.showMessageDialog(null, "Dados do paciente:" + paciente.dadosDoPaciente());
 				 break;
 			   
 			 case 4:
-				 JOptionPane.showMessageDialog(null, "Receitas:" );
+				 JOptionPane.showMessageDialog(null, "Receitas:" +  );
+
+				 
+				
 				 break;
 			 case 5:
 				 JOptionPane.showMessageDialog(null, "Sair");
